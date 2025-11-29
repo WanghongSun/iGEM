@@ -82,7 +82,6 @@ int main() {
         rk4Step(N, X, dt, params);
     }
     outFile.close();
-    std::cout << "模拟完成，结果已保存至model2_igem_whu_results.txt" << std::endl;
     system("gnuplot plot_N.gp");
     system("gnuplot plot_X.gp");
     std::cout << "图像生成完成，已保存为N_vs_time.png和X_vs_time.png" << std::endl;
